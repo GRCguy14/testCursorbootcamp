@@ -1,0 +1,196 @@
+/* Elegant Poetry Website — shared styles */
+:root {
+  --bg: #faf9f7;
+  --text: #1a1a2e;
+  --text-muted: #4a4a5a;
+  --accent: #16213e;
+  --accent-hover: #0f3460;
+  --card-bg: #ffffff;
+  --card-border: #e8e6e3;
+  --shadow: 0 2px 12px rgba(22, 33, 62, 0.06);
+  --shadow-hover: 0 8px 24px rgba(22, 33, 62, 0.12);
+  --radius: 12px;
+  --radius-btn: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  max-width: 960px;
+  padding: 2rem 1.5rem;
+  flex: 1;
+}
+
+/* Header */
+.site-header {
+  padding: 2rem 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.site-header a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.site-header a:hover {
+  color: var(--accent);
+}
+
+/* Poem grid (homepage) */
+.poem-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media (min-width: 640px) {
+  .poem-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Poem card */
+.poem-card {
+  display: block;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.poem-card:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--accent);
+}
+
+.poem-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.poem-card .preview {
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  color: var(--bg);
+  text-decoration: none;
+  border: none;
+  border-radius: var(--radius-btn);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.btn-random {
+  margin: 2rem auto;
+  display: block;
+  text-align: center;
+  max-width: 12rem;
+}
+
+/* Poem content (dedicated + random pages) */
+.poem-content {
+  max-width: 32rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.poem-content h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--accent);
+}
+
+.poem-content .stanza {
+  margin-bottom: 1.5rem;
+}
+
+.poem-content .stanza p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.poem-content .stanza p:last-child {
+  margin-bottom: 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+  padding: 1.5rem 1.5rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--card-border);
+}
+
+/* Random poem page */
+.random-poem-container {
+  min-height: 14rem;
+  margin: 2rem 0;
+}
+
+.random-poem-container .poem-content {
+  margin: 0 auto;
+}
+
+.random-actions {
+  text-align: center;
+  margin-top: 2rem;
+}

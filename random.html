@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Poem — Verse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html">Verse</a>
+  </header>
+
+  <main>
+    <div id="random-poem" class="random-poem-container">
+      <article class="poem-content">
+        <h1 class="poem-title">Random Verse</h1>
+        <div class="poem-stanzas">
+          <!-- Filled by random-poem.js -->
+        </div>
+      </article>
+    </div>
+
+    <div class="random-actions">
+      <button type="button" id="another-poem-btn" class="btn">Another poem</button>
+    </div>
+
+    <p style="text-align: center; margin-top: 2rem;">
+      <a href="index.html" class="back-link">← Back to home</a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    A collection of verse.
+  </footer>
+
+  <script src="js/random-poem.js"></script>
+</body>
+</html>

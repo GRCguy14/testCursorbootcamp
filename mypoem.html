@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentic AI — A Poem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sunset-orange: #e07a5f;
+      --sunset-coral: #f4a261;
+      --sunset-pink: #e8a0bf;
+      --sunset-rose: #c77dff;
+      --deep-purple: #5c4d7d;
+      --dusk: #3d2c4e;
+      --cream: #faf6f1;
+      --ink: #2d2438;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      background: linear-gradient(165deg, var(--dusk) 0%, var(--deep-purple) 35%, var(--sunset-rose) 70%, var(--sunset-coral) 90%, var(--sunset-pink) 100%);
+      color: var(--cream);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 36rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    header {
+      margin-bottom: 3rem;
+      opacity: 0;
+      animation: fadeIn 1s ease 0.2s forwards;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--cream);
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .stanza {
+      opacity: 0;
+      animation: fadeIn 1.2s ease forwards;
+      margin-bottom: 2.5rem;
+    }
+
+    .stanza:nth-of-type(1) { animation-delay: 0.5s; }
+    .stanza:nth-of-type(2) { animation-delay: 1.2s; }
+
+    .stanza p {
+      font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+      font-weight: 400;
+      font-style: italic;
+      margin-bottom: 0.75rem;
+      color: rgba(250, 246, 241, 0.95);
+    }
+
+    .stanza p:last-child {
+      margin-bottom: 0;
+    }
+
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(250, 246, 241, 0.2);
+      opacity: 0;
+      animation: fadeIn 1s ease 1.8s forwards;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      color: rgba(250, 246, 241, 0.7);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Agentic AI</h1>
+    </header>
+
+    <div class="stanza">
+      <p>You describe the dream; the agent thinks.</p>
+      <p>It searches code, suggests, and links,</p>
+      <p>Builds the feature, runs the test—</p>
+      <p>A pair of minds, one human, one guest.</p>
+    </div>
+
+    <div class="stanza">
+      <p>No more alone against the stack:</p>
+      <p>You steer the ship, it charts the track.</p>
+      <p>The joy's the lift, the shared intent—</p>
+      <p>To ship what's good, together, sent.</p>
+    </div>
+
+    <footer>
+      March 3, 2025
+    </footer>
+  </div>
+</body>
+</html>
