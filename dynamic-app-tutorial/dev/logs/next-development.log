@@ -1,0 +1,12 @@
+[00:00:02.639] Server  LOG     ✓ Ready in 1865ms
+[00:00:05.983] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.166] Browser ERROR   uncaughtError: Error: Instant must be initialized with an appId.
+[00:01:45.416] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:01:45.417] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./lib/db.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:01:45.417] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:01:45.667] Server  LOG     ✓ Compiled in 76ms
+[00:01:45.814] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:00.771] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:03.296] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:31.806] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:07.436] Browser LOG     [CursorBrowser] Dialog suppressed: alert - Uh oh: Record not found: app-user-magic-code
